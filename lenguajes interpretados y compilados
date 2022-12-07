@@ -1,0 +1,49 @@
+Compilador: es un traductor
+
+Codigo maquina
+
+-Primera tarea, lee el codigo fuente y lo tokeniza.(convertir a caracteres) 
+Busca palabras reservadas, identificadores, simbolos de asignacion, numeros enteros, etc.
+"Analizador lexico"
+
+-Siguiente fase: analisis sintactico. Busca errores, y lo informa. (error de sintaxis)
+-analisis semantico: simbolos, signos, etc.
+
+-Genera un codigo intermedio, que simplifica el lenguaje humano, para poder manipularlo mejor.
+-"abstract syntax tree" -> arbol sintactico abstracto
+
+-Optimizacion codigo intermedio: son capaces de mejorar el codigo escrito, o eliminar el codigo redundante. Puede deshacer bucles para optimizar el codigo: "unroll loops"
+
+-Generacion de codigo: aqui es donde genera codigo maquina, o codigo para ser interpretado.
+
+Todos los compiladores funcionan igual. Cambian internamente segun el lenguaje.
+
+
+Lenguaje compilado: se compila a codigo maquina y se ejecuta en nuestro procesador a travez del SO.
+Los mas tipicos: C, C++, Rust, Go.
+
+Interpretado: No son ejecutados directamente, se usa un interprete. Se ejecuta en una maquina virtual. Ej: java se ejecuta en "JVM (Java Virtual Machine)"
+Porque no se ejecuta directamente en el procesador. El interprete lo va leyendo linea por linea y lo va ejecutando.
+"bytecode" -> lo interpreta la JVM. 
+Los interpretados mas utilizados: java, python, php.
+
+Hay lenguajes mixtos, como el C#. Genera un codigo intermedio que se llama MSIL (Microsoft intermediate language)
+
+Estos lenguajes analizan el codigo y si hay partes repetidas, que no rinden, lo compilan, se lo pasan al procesador para que sea mas rapido. 
+Se conoce como JIT(Just in Time - JIT Compiler)
+
+Los lenguajes compilados son mucho mas rapidos, ya que se ejecutan directa/ en el procesador, en cambio los interpretados usan otro programa, que se ejecuta como tal.
+
+Ventajas: El lenguaje interpretado es mas facil de depurar. 
+Una vez que lo tenes interpretado lo podes ejecutar en cualquier lado(SO o plataforma)
+
+Los compilados debe ser hechos para cada procesador.
+
+----------------------------------------------------------
+
+
+
+
+
+
+

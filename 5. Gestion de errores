@@ -1,0 +1,46 @@
+Errores comunes en dev novatos
+(errores de programador, y no de programacion)
+
+Variables:
+
+Las variables deben tener nombres entendibles.
+El codigo debe entenderse, aunque no este comentado.
+
+no usar:
+car foo = 0
+car bar = 0
+var foobar = 0
+
+No usar letras para los nombres de variables.
+
+Salvo excepciones:
+
+una buena pactica, cuando usamos bucles for es usar: i; j; k;
+
+Suele usarse, y no esta mal, temp, para variables temporales, que se usan y se llaman enseguida.
+
+Es una buena practica comentar el codigo, informando lo que deberia hacer.
+Al igual que no es buena practica comentar lo que hace un codigo que esta claro al verlo. Es redundante, y no tiene sentido.
+
+Otro error comun es la desprolijidad en el codigo, que luego, al momento de leerlo no se entiende bien.
+
+------------------
+
+Si existe una forma simpke de hacer un codigo, que conocemos, no usemos la forma mas compleja.
+
+NO usar print para depurar el codigo...para eso usar un depurador.
+
+NO crear funciones interminables. Intentar hacer funciones pequeñas.-
+
+Errores de tipo, y de conversion de tipo. Son muy comunes. El codigo compila igual, pero el resultado no es el deseado.
+
+Error: Out of bounds (oof-by-one)
+Es muy comun en los arrays, cuando contamos elementos. En vez de contar desde 0 lo hacemos desde 1.
+
+Overflow:
+Es cuando usamos valores fuera del rango aceptado. Ej: byte (-127 hasta 128) si a 127 le sumamos 5 salimos de rango y nos arroja -124. Se sale de rango y da la vuelta.
+
+
+
+
+

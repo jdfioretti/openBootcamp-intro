@@ -1,0 +1,111 @@
+Herencia:
+Consiste en que una clase hereda metodos y props de otra clase.
+A la que hererda la llamamos hija, y a la que cede padre, base, principal, etc...
+
+ej:
+class vehiculo
+	privada velocidadMaxima;
+	privada tipoGasolina;
+   
+   Funcion diHola()
+	imprime "Hola";
+
+class coche hereda de vehiculo;
+	
+	(hereda)privada velocidadMaxima;
+	(hereda)privada tipoGasolina;
+   
+   (hereda)Funcion diHola()
+		imprime "Hola";
+
+---------------------
+Tambien puede tener propiedades y funciones propias.
+Y si no le damos props o funciones propias no tiene sentido heredar...
+
+A la vez podemos tener otra clase que herede de la class coche, de la que heredaba de
+la anterior, se conoce como herencia multinivel
+
+"final" class es una clase de la que no vamos a poder heredar.
+
+Hay varios tipos de herencia:
+
+-simples
+-multinivel: heredan de dos, o mas, clases padres
+-por jerarquia: como una especie de arbol genealogico
+-hibrida: es una simple, mas una multiple
+
+ej: 
+clase A 
+clase B hereda de A
+clase C hereda de A
+clase D heresa de B y C
+
+
+
+nunca podre utilizar elementos de una clase hija, que no esten en la clase padre, desde esta ultima.
+
+----------------------------------------------------------------------
+ABSTRACCION
+
+Una vez que declaro una clase abstract no se puede instanciar
+Las funciones abstractas sirven para implementar clases parcialmente
+
+En las clases padres existen las funciones, pero no dicen que hacer, ni como, pero hay que hacerlo mientras cumplamos con sus normas.
+Las clases hijas se encaran de hacerlo.
+
+-----------------------------------------------------------------------
+POLIMORFISMO
+
+Consiste en que las clases hijas implementan la misma funcion, pero hacen distintas cosas.
+Ejecutara la mas cercana a su entorno. Intentara en la clase hija y si no hay funcion ejecutara la de la clase padre
+
+funciones polimorficas. Pueden usarse muchas veces, con diferentes parametros, o que hgan cosas diferentes
+
+ejemplo:
+
+funcion sumar numeros (int a, int b)
+print suma (enteros)
+
+funcion sumar numeros (float a, float b)
+print suma (flotantes)
+
+funcion sumar numeros (double a, double b)
+print suma (decimales)
+
+Misma funcion, distintos parametros.
+
+---------------------------------------------------------------------------
+INTERFACES
+
+A diferencia de las clases abstractas no implementan funciones, sino que nos dicen lo que tenemos que implementar
+
+ejemplo:
+
+interface Vehiculo{
+    void Acelerar(int cuantaVelocidad);
+    void Frenar(int cuantaVelocidad);
+}
+class Coche implemets Vehiculo {
+    public void Acelerar(int cuantaVelocidad){}
+    public void Frenar(int cuantaVelocidad){}
+}
+
+
+Las interfaces se utilizan mucho, a veces ocultas. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
